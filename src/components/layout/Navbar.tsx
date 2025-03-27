@@ -66,7 +66,7 @@ const Navbar = () => {
           <div className="bg-primary rounded-lg w-10 h-10 flex items-center justify-center text-primary-foreground transition-transform group-hover:rotate-12">
             <Code className="h-5 w-5" />
           </div>
-          <span className="font-mono font-bold text-xl">Krish Weds Meet</span>
+          <span className="font-mono font-bold text-xl">Meet Parmar</span>
         </Link>
         
         {/* Desktop Navigation */}
