@@ -12,14 +12,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Jasmeet Parmar</h3>
+            <h3 className="text-lg font-semibold">Meet Parmar</h3>
             <p className="text-muted-foreground text-sm">
               Computer Engineering student with a strong foundation in network security and software development. 
               Passionate about technological innovation.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com/jasmeet01" 
+                href="https://github.com/meetparmar" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/jasmeet01" 
+                href="https://www.linkedin.com/in/meetparmar" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:jasminparmarh17@gmail.com" 
+                href="mailto:meetparmar14790@gmail.com" 
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"
                 aria-label="Email"
               >
@@ -80,7 +80,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Contact Me</h3>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                <span className="font-medium">Email:</span> jasminparmarh17@gmail.com
+                <span className="font-medium">Email:</span> meetparmar14790@gmail.com
               </li>
               <li className="text-sm text-muted-foreground">
                 <span className="font-medium">Location:</span> University of Ahmedabad
@@ -92,10 +92,10 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Jasmeet Parmar. All Rights Reserved.
+            &copy; {currentYear} Meet Parmar. All Rights Reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center mt-2 md:mt-0">
-            Made with <Heart className="h-3 w-3 mx-1 text-destructive animate-pulse-slow" /> by Jasmeet
+            Made with <Heart className="h-3 w-3 mx-1 text-destructive animate-pulse-slow" /> by Meet
           </p>
         </div>
       </div>

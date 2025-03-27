@@ -96,7 +96,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full p-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
-                  placeholder="Hi Jasmeet, I'd like to talk about..."
+                  placeholder="Hi Meet, I'd like to talk about..."
                 ></textarea>
               </div>
               
@@ -136,10 +136,10 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium">Email</h4>
                     <a 
-                      href="mailto:jasminparmarh17@gmail.com" 
+                      href="mailto:meetparmar14790@gmail.com" 
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
-                      jasminparmarh17@gmail.com
+                      meetparmar14790@gmail.com
                     </a>
                   </div>
                 </div>
@@ -151,10 +151,10 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium">Phone</h4>
                     <a 
-                      href="tel:+918460584775" 
+                      href="tel:+919016514790" 
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
-                      +91 8460584775
+                      +91 9016514790
                     </a>
                   </div>
                 </div>
@@ -177,7 +177,7 @@ const Contact = () => {
                 <h4 className="text-sm font-medium mb-4">Connect With Me</h4>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com/jasmeet01" 
+                    href="https://github.com/meetparmar" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary p-2 rounded-md text-foreground hover:text-primary transition-colors"
@@ -186,7 +186,7 @@ const Contact = () => {
                     <Github className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/jasmeet01" 
+                    href="https://www.linkedin.com/in/meetparmar" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary p-2 rounded-md text-foreground hover:text-primary transition-colors"
@@ -195,7 +195,7 @@ const Contact = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="mailto:jasminparmarh17@gmail.com" 
+                    href="mailto:meetparmar14790@gmail.com" 
                     className="bg-secondary p-2 rounded-md text-foreground hover:text-primary transition-colors"
                     aria-label="Email"
                   >

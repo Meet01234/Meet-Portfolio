@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Hi, I'm <span className="text-tech-foreground">Jasmeet Parmar</span>
+              Hi, I'm <span className="text-tech-foreground">Meet Parmar</span>
             </h1>
             
             <div className="h-8">
@@ -92,7 +92,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-tech-foreground/20 to-primary/10 rounded-3xl transform rotate-6 scale-105 animate-pulse-slow"></div>
               <div className="glass-card rounded-3xl overflow-hidden p-2 shadow-xl w-64 h-64 md:w-80 md:h-80 animate-float">
                 <div className="bg-muted rounded-2xl h-full w-full flex items-center justify-center">
-                  <span className="text-2xl font-mono">JP</span>
+                  <span className="text-2xl font-mono">MP</span>
                 </div>
               </div>
               
