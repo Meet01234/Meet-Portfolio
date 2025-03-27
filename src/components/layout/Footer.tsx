@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com/meetparmar" 
+                href="https://github.com/Meet01234" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/meetparmar" 
+                href="https://www.linkedin.com/in/meet26" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -83,7 +83,7 @@ const Footer = () => {
                 <span className="font-medium">Email:</span> meetparmar14790@gmail.com
               </li>
               <li className="text-sm text-muted-foreground">
-                <span className="font-medium">Location:</span> University of Ahmedabad
+                <span className="font-medium">Location:</span> Ahmedabad
               </li>
             </ul>
           </div>
