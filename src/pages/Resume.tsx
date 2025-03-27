@@ -35,7 +35,7 @@ const Resume = () => {
           <div className="p-8 border-b border-border">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
               <div>
-                <h1 className="text-3xl font-bold mb-2">Jasmeet Parmar</h1>
+                <h1 className="text-3xl font-bold mb-2">Meet Parmar</h1>
                 <p className="text-muted-foreground">Computer Engineering Student</p>
               </div>
               
@@ -51,14 +51,14 @@ const Resume = () => {
             <div className="flex flex-col md:flex-row gap-4 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                <a href="mailto:jasminparmarh17@gmail.com" className="hover:text-primary transition-colors">
-                  jasminparmarh17@gmail.com
+                <a href="mailto:meetparmar14790@gmail.com" className="hover:text-primary transition-colors">
+                  meetparmar14790@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <a href="tel:+918460584775" className="hover:text-primary transition-colors">
-                  +91 8460584775
+                <a href="tel:+919416514790" className="hover:text-primary transition-colors">
+                  +91 9416514790
                 </a>
               </div>
               <div className="flex items-center">
@@ -67,8 +67,8 @@ const Resume = () => {
               </div>
               <div className="flex items-center">
                 <ExternalLink className="h-4 w-4 mr-2" />
-                <a href="https://linkedin.com/in/jasmeet01" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  linkedin.com/in/jasmeet01
+                <a href="https://linkedin.com/in/meet26" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  linkedin.com/in/meet26
                 </a>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Resume = () => {
               <div className="space-y-4">
                 <div className="rounded-lg border border-border p-4">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-semibold">MCA - Gujarat University</h3>
+                    <h3 className="font-semibold">MCA - Ganpat University</h3>
                     <span className="text-xs bg-secondary px-2 py-0.5 rounded-full">07/2023 - Present</span>
                   </div>
                 </div>
