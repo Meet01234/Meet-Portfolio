@@ -159,10 +159,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
                     <a 
-                      href="mailto:jasminparmarh17@gmail.com" 
+                      href="mailto:meetparmar14790@gmail.com" 
                       className="text-muted-foreground hover:text-primary transition-colors flex items-center"
                     >
-                      jasminparmarh17@gmail.com
+                      meetparmar14790@gmail.com
                       <ExternalLink className="h-3 w-3 ml-1" />
                     </a>
                   </div>
@@ -175,10 +175,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium mb-1">Phone</h4>
                     <a 
-                      href="tel:+918460584775" 
+                      href="tel:+919016514790" 
                       className="text-muted-foreground hover:text-primary transition-colors flex items-center"
                     >
-                      +91 8460584775
+                      +91 9016514790
                       <ExternalLink className="h-3 w-3 ml-1" />
                     </a>
                   </div>
@@ -204,7 +204,7 @@ const Contact = () => {
               
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <a 
-                  href="https://github.com/jasmeet01" 
+                  href="https://github.com/Meet01234" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 p-4 rounded-lg bg-secondary hover:bg-secondary/70 transition-colors"
@@ -214,7 +214,7 @@ const Contact = () => {
                 </a>
                 
                 <a 
-                  href="https://www.linkedin.com/in/jasmeet01" 
+                  href="https://www.linkedin.com/in/meet26" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 p-4 rounded-lg bg-secondary hover:bg-secondary/70 transition-colors"
