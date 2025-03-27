@@ -21,17 +21,17 @@ const Navbar = () => {
     { 
       name: 'GitHub', 
       icon: <Github className="h-5 w-5" />, 
-      url: 'https://github.com/jasmeet01'
+      url: 'https://github.com/Meet01234'
     },
     { 
       name: 'LinkedIn', 
       icon: <Linkedin className="h-5 w-5" />, 
-      url: 'https://www.linkedin.com/in/jasmeet01'
+      url: 'https://www.linkedin.com/in/meet26'
     },
     { 
       name: 'Email', 
       icon: <Mail className="h-5 w-5" />, 
-      url: 'mailto:jasminparmarh17@gmail.com'
+      url: 'mailto:meetparmar14790@gmail.com'
     }
   ];
   
@@ -66,7 +66,7 @@ const Navbar = () => {
           <div className="bg-primary rounded-lg w-10 h-10 flex items-center justify-center text-primary-foreground transition-transform group-hover:rotate-12">
             <Code className="h-5 w-5" />
           </div>
-          <span className="font-mono font-bold text-xl">Jasmeet</span>
+          <span className="font-mono font-bold text-xl">Meet Randwa</span>
         </Link>
         
         {/* Desktop Navigation */}
