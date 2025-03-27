@@ -7,7 +7,6 @@ import Projects from '@/components/sections/Projects';
 import Skills from '@/components/sections/Skills';
 import Contact from '@/components/sections/Contact';
 import MouseFollower from '@/components/ui/MouseFollower';
-import { useInView } from 'react-intersection-observer';
 
 const Index = () => {
   // Enable scroll animations
