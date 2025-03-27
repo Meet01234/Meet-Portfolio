@@ -57,3 +57,73 @@ a:focus, button:focus, input:focus, textarea:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
+
+/* Tech tag styling */
+.tech-tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background-color: var(--tech);
+  color: var(--tech-foreground);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 162, 255, 0.2);
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(45, 45, 45, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 112, 243, 0.3);
+  box-shadow: 0 0 20px rgba(0, 112, 243, 0.1);
+}
+
+/* Interactive card animations */
+.interactive-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 112, 243, 0.1);
+}
+
+/* Interactive link animations */
+.interactive-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.interactive-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.interactive-link:hover::after {
+  width: 100%;
+}
+
+/* Section container */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
