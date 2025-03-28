@@ -7,9 +7,9 @@ const MouseFollower = () => {
   const [ripples, setRipples] = useState<Array<{ id: number; x: number; y: number }>>([]);
   const rippleIdRef = useRef(0);
 
-  useEffect(() => {
-    // Add custom cursor class to body
-    document.body.classList.add('custom-cursor-active');
+  // useEffect(() => {
+  //   // Add custom cursor class to body
+  //   document.body.classList.add('custom-cursor-active');
     
     const handleMouseMove = (e: MouseEvent) => {
       if (followerRef.current) {
