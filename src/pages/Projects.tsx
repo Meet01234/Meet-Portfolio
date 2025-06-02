@@ -7,73 +7,97 @@ const Projects = () => {
   // Project data
   const projects = [
     {
-      title: "AirGuide Tool",
-      description: "The objective of this project is to develop an intuitive and effective AirGuide Tool and Presentation Tool for business meetings, allowing interactive navigation of business objectives without needing physical remotes.",
-      technologies: ["Python", "Computer Vision", "Machine Learning"],
+      title: "Automated Multi-Server CI/CD Pipeline Using Jenkins, Ansible, and Apache",
+      description: "Automated CI/CD pipeline using Jenkins, Ansible, and Apache to deploy code across multiple servers with seamless integration and delivery.",
+      technologies: ["Jenkins", "Apache", "Ansible", "CI/CD"],
       highlights: [
-        "AI-based gesture recognition",
-        "Touchless navigation system",
-        "Motion detection with deep learning algorithms"
+        "End-to-end CI/CD automation across multiple servers",
+        "Infrastructure provisioning and configuration using Ansible",
+        "Version-controlled deployments with Jenkins pipelines"
       ],
       image: "/placeholder.svg",
       link: "#"
     },
     {
-      title: "BookingBanquet",
-      description: "Software application designed to streamline and automate banquet operations, providing a comprehensive solution to enhance customer journey, transaction, and booking process.",
-      technologies: ["Software Development", "UI/UX", "Database Design"],
+      title: "AWS-Optimized Nginx Deployment",
+      description: "Deployed an Nginx-based web application inside Docker containers on AWS EC2 with Auto Scaling and Route 53 DNS integration.",
+      technologies: ["AWS ", "Docker", "Auto Scaling", "Route 53"],
       highlights: [
-        "Ticket cancellation/refund features",
-        "Comprehensive banquet management",
-        "Customer journey automation"
+        "Auto Scaling for high availability under varying loads",
+        "Route 53 for domain and DNS routing",
+        "Containerized Nginx deployment on EC2"
       ],
       image: "/placeholder.svg",
       link: "#"
     },
     {
-      title: "Infrastructure Automation with Chef & AWS",
+      title: "CI/CD Pipeline for Node.js App using Jenkins, Docker & Kubernetes",
       description: "Streamlined cloud-based infrastructure management using Chef and AWS for version-controlled infrastructure deployments through GitOps patterns.",
-      technologies: ["AWS", "Chef", "GitOps", "Infrastructure as Code"],
+      technologies: ["Jenkins", "Jenkins", "Kubernetes", "Node.js", "AWS EC2"],
       highlights: [
-        "Implementing version control",
-        "Cloud infrastructure automation",
-        "DevOps integration"
+        "Declarative Jenkins pipeline with GitHub integration",
+        "Docker image automation and deployment",
+        "Kubernetes YAML-based orchestration"
       ],
       image: "/placeholder.svg",
       link: "#"
     },
     {
-      title: "Network Security Implementation",
-      description: "Designed and implemented network security solutions using firewalls, ACLs, and intrusion detection systems to protect sensitive data and infrastructure.",
-      technologies: ["Networking", "Cybersecurity", "Firewalls"],
+      title: "Dockerizing the WebSocket Server",
+      description: "Built a real-time stock price server using Node.js and Redis, containerized with Docker for scalable deployment.",
+      technologies: ["Node.js", "WebSocket", "Docker", "Redis"],
       highlights: [
-        "Firewall configuration and optimization",
-        "Access control lists implementation",
-        "Security audit and monitoring"
+        "Real-time WebSocket communication",
+        "Pub/Sub mechanism using Redis",
+        "Docker-based isolation and portability"
       ],
       image: "/placeholder.svg",
       link: "#"
     },
     {
-      title: "Web Development Portfolio",
-      description: "Developed responsive web applications using modern frontend frameworks and best practices for performance optimization.",
-      technologies: ["HTML", "CSS", "JavaScript", "ReactJS"],
+      title: "WordPress Website Deployment Using Docker",
+      description: "Deployed WordPress and MySQL using Docker on an AWS EC2 instance with persistent data and container networking.",
+      technologies: ["Docker", "WordPress", "EC2", "Docker"],
       highlights: [
-        "Responsive design implementation",
-        "Frontend performance optimization",
-        "Modern UI/UX practices"
+        "Isolated containers with Docker networking",
+        "Persistent volumes for MySQL and WordPress",
+        "EC2 configuration via PuTTY and hosted on port 9090"
       ],
       image: "/placeholder.svg",
       link: "#"
     },
     {
-      title: "Data Analysis Dashboard",
-      description: "Created interactive data visualization dashboard for business analytics and reporting using Python libraries.",
-      technologies: ["Python", "Data Analysis", "Visualization"],
+      title: "Infrastructure Automation with Chef & Git",
+      description: "Automated infrastructure configuration using Chef cookbooks and Git for version control and change tracking.",
+      technologies: ["Chef", "Git", "Infra as Code"],
       highlights: [
-        "Interactive data visualizations",
-        "Real-time data processing",
-        "Custom reporting tools"
+        "Configuration management via Chef recipes",
+        "File lifecycle management (create, update, delete)",
+        "Git branching and version control integration"
+      ],
+      image: "/placeholder.svg",
+      link: "#"
+    },
+    {
+      title: "Bank Management System",
+      description: "A platform for secure and efficient handling of bank accounts, transactions, and customer services.",
+      technologies: ["Python", "Software Development"],
+      highlights: [
+        "User-friendly interface for banking operations",
+        "Secure transaction management",
+        "Features: account creation, fund transfer, deposit/withdrawal"
+      ],
+      image: "/placeholder.svg",
+      link: "#"
+    },
+    {
+      title: "Aptitude Test and Preparation – QuizUp",
+      description: "Android application for company-specific aptitude test practice with instant feedback and personalized resources.",
+      technologies: ["Android", "UI/UX", "Java"],
+      highlights: [
+        "Company-wise aptitude practice sets",
+        "Real-time quiz evaluation and feedback",
+        "Intuitive UI design for better learning experience"
       ],
       image: "/placeholder.svg",
       link: "#"
