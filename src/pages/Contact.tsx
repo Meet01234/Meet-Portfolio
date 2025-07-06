@@ -23,6 +23,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
+    try {
+      await emailjs.send(
+        'service_puvfbe9', // Replace with your EmailJS service ID
+        'template_6xww36c', // Replace with your EmailJS template ID
+        {
+          to_email: 'meetparmar14790@gmail.com ',
+          cname: formData.name,
+          cemail: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'Uek1e91JZVh7T-l2F' // Replace with your EmailJS public key
+      );
+
+      // Trigger celebration effect in parent component
+      onSuccess();
+
+      toast({
+        title: "Message Sent!",
+        description: "We've received your message and will get back to you soon.",
+        action: (
+          <div className="h-8 w-8 bg-green-500/20 rounded-full flex items-center justify-center">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+          </div>
+        ),
+      });
     // Simulate form submission
     setTimeout(() => {
       toast({
