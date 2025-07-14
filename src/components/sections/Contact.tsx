@@ -1,59 +1,64 @@
-
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
-import { toast } from '@/hooks/use-toast';
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
       });
-      
+
       setFormData({
-        name: '',
-        email: '',
-        message: ''
+        name: "",
+        email: "",
+        message: "",
       });
-      
+
       setIsSubmitting(false);
     }, 1500);
   };
-  
+
   return (
     <section id="contact" className="py-20">
       <div className="section-container">
         <div className="text-center max-w-2xl mx-auto reveal-section">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-muted-foreground mb-12">
-            Let's connect! I'm always open to new opportunities and collaborations.
+            Let's connect! I'm always open to new opportunities and
+            collaborations.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Contact form */}
           <div className="reveal-section">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Name
                 </label>
                 <input
@@ -67,9 +72,12 @@ const Contact = () => {
                   placeholder="John Doe"
                 />
               </div>
-              
+
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Email
                 </label>
                 <input
@@ -83,9 +91,12 @@ const Contact = () => {
                   placeholder="john@example.com"
                 />
               </div>
-              
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Message
                 </label>
                 <textarea
@@ -99,7 +110,7 @@ const Contact = () => {
                   placeholder="Hi Meet, I'd like to talk about..."
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -107,9 +118,25 @@ const Contact = () => {
               >
                 {isSubmitting ? (
                   <span className="flex items-center">
-                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    <svg
+                      className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
                     </svg>
                     Sending...
                   </span>
@@ -122,12 +149,14 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          
+
           {/* Contact info */}
           <div className="space-y-8 reveal-section">
             <div className="glass-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
-              
+              <h3 className="text-xl font-semibold mb-6">
+                Contact Information
+              </h3>
+
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-2 rounded-md mr-4">
@@ -135,30 +164,30 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium">Email</h4>
-                    <a 
-                      href="mailto:meetparmar14790@gmail.com" 
+                    <a
+                      href="mailto:meetparmar14790@gmail.com"
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       meetparmar14790@gmail.com
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-2 rounded-md mr-4">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h4 className="text-sm font-medium">Phone</h4>
-                    <a 
-                      href="tel:+919016514790" 
+                    <a
+                      href="tel:+919016514790"
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       +91 9016514790
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-2 rounded-md mr-4">
                     <MapPin className="h-5 w-5 text-primary" />
@@ -166,18 +195,18 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium">Location</h4>
                     <p className="text-muted-foreground text-sm">
-                      University of Ahmedabad, Gujarat, India
+                      Ahmedabad, Gujarat, India
                     </p>
                   </div>
                 </div>
               </div>
-              
+
               {/* Social links */}
               <div className="mt-8 pt-6 border-t border-border">
                 <h4 className="text-sm font-medium mb-4">Connect With Me</h4>
                 <div className="flex space-x-4">
-                  <a 
-                    href="https://github.com/meetparmar" 
+                  <a
+                    href="https://github.com/Meet01234"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary p-2 rounded-md text-foreground hover:text-primary transition-colors"
@@ -185,8 +214,8 @@ const Contact = () => {
                   >
                     <Github className="h-5 w-5" />
                   </a>
-                  <a 
-                    href="https://www.linkedin.com/in/meetparmar" 
+                  <a
+                    href="https://www.linkedin.com/in/meet26"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary p-2 rounded-md text-foreground hover:text-primary transition-colors"
@@ -194,8 +223,8 @@ const Contact = () => {
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
-                  <a 
-                    href="mailto:meetparmar14790@gmail.com" 
+                  <a
+                    href="mailto:meetparmar14790@gmail.com"
                     className="bg-secondary p-2 rounded-md text-foreground hover:text-primary transition-colors"
                     aria-label="Email"
                   >
@@ -204,7 +233,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Availability status */}
             <div className="bg-code p-6 rounded-lg border border-border reveal-section">
               <div className="flex items-center mb-2">
@@ -212,8 +241,8 @@ const Contact = () => {
                 <h4 className="font-medium">Currently Available</h4>
               </div>
               <p className="text-sm text-muted-foreground">
-                I'm currently looking for new opportunities in DevOps Engineering and Network Engineering.
-                Feel free to reach out!
+                I'm currently looking for new opportunities in DevOps
+                Engineering and Network Engineering. Feel free to reach out!
               </p>
             </div>
           </div>
