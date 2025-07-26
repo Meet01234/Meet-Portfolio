@@ -32,22 +32,50 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        'service_puvfbe9', // Replace with your EmailJS service ID
+        'template_6xww36c', // Replace with your EmailJS template ID
+        {
+          to_email: 'contact@blackmatrix.in, info.blackmatrix@gmail.com',
+          cname: formData.name,
+          cemail: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'E_yze8Djkv9XRrVbe' // Replace with your EmailJS public key
+      );
+
+      // Trigger celebration effect in parent component
+      onSuccess();
+
       toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: "Message Sent!",
+        description: "We've received your message and will get back to you soon.",
+        action: (
+          <div className="h-8 w-8 bg-green-500/20 rounded-full flex items-center justify-center">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+          </div>
+        ),
       });
-
+      
       setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
       });
-
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
